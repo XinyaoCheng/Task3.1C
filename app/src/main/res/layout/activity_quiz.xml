@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuizActivity">
+
+
+    <TextView
+        android:id="@+id/welcomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#CAC5C5"
+        android:text="Welcome"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="292dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomText" />
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="358dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+
+
+    <RadioGroup
+        android:id="@+id/optionsGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_text">
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:checked="true"
+            android:layout_width="288dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_rounded_rectangle"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="325dp" />
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:checked="true"
+            android:layout_width="288dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_rounded_rectangle"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="235dp" />
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:checked="true"
+            android:layout_width="288dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_rounded_rectangle"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="150dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="205dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/my_rounded_rectangle"
+        android:backgroundTint="#D3D3D3"
+        android:text="Submit"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionsGroup" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:visibility="invisible"
+        android:layout_width="205dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/my_rounded_rectangle"
+        android:backgroundTint="@color/gray"
+        android:text="Next"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionsGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

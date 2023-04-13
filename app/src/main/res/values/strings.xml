@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">task3.2</string>
+    <!-- strings.xml -->
+    <string name="question_1">What is your sex?</string>
+    <string name="option_1_1">Male</string>
+    <string name="option_1_2">Female</string>
+
+    <string name="question_2">What is your age?</string>
+    <string name="option_2_1">18-20</string>
+    <string name="option_2_2">20-25</string>
+    <string name="option_2_3">25-30</string>
+    <string name="option_2_4">Over 30</string>
+
+    <string name="question_3">What kind of student you are?</string>
+    <string name="option_3_1">full-time student with part-time job</string>
+    <string name="option_3_2">full-time student with full-time job</string>
+    <string name="option_3_3">part-time student</string>
+
+
+</resources>

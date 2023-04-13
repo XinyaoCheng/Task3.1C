@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+
+    <TextView
+        android:id="@+id/congratsText"
+        android:layout_width="366dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="177dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="134dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="146dp"
+        android:text="Your Score:"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/congratsText" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="95dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="158dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText" />
+
+    <Button
+        android:id="@+id/takeNewQuizButton"
+        android:layout_width="148dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="132dp"
+        android:background="@drawable/my_rounded_rectangle"
+        android:text="Take a new quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score" />
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="148dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="132dp"
+        android:background="@drawable/my_rounded_rectangle"
+        android:text="finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/takeNewQuizButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
